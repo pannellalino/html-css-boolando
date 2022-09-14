@@ -59,7 +59,7 @@ header .icons i{
 }
 
 main .card{
-  /*display: inline-block;*/
+  display: inline-block;
   width: 338px;
 }
 
@@ -71,10 +71,25 @@ main .card::before{
 
 main .card img{
   width: 100%;
+  height: auto;
+}
+
+main .card img.hover-img{
+  display: none;
+}
+
+main .card .image:hover img{
+  display: none;
+  cursor: pointer;
+}
+
+main .card .image:hover img.hover-img{
+  display: block;
 }
 
 main .card .image{
   position: relative;
+  height: 487.984px;
 }
 
 main .card .box{
@@ -106,6 +121,12 @@ main .card .box.green{
   bottom: 30px;
 }
 
+main .card .box.green-last{
+  background-color: green;
+  color: white;
+  bottom: 30px;
+}
+
 main .card span{
   font-size: .7rem;
   color: grey;
@@ -121,4 +142,37 @@ main .card .text-red{
 
 main .card .through{
   text-decoration: line-through;
+}
+
+main{
+  padding-bottom: 50px;
+}
+
+footer{
+  height: 100px;
+  background-color: #141414;
+  color: white;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h5, h6{
+  padding-top: 20px;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+}
+
+footer ul li{
+  font-size: .8rem;
+  padding: 10px 5px 0 0;
+}
+
+footer i{
+  margin: 10px 0 0 5px;
 }
