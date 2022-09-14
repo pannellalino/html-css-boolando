@@ -1,0 +1,124 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.debug{
+  height: 50px;
+  background-color: aqua;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #FB5108;
+  box-shadow: 0px 0px 5px black;
+  z-index: 999;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+  line-height: 50px;
+}
+
+header ul li{
+  font-size: .8rem;
+  color: white;
+  padding-right: 5px;
+}
+
+header img{
+  height: 25px;
+  margin: auto 0;
+}
+
+header .icons{
+  color: white;
+  line-height: 50px;
+}
+
+header .icons i{
+  padding-left: 5px;
+}
+
+main .card{
+  /*display: inline-block;*/
+  width: 338px;
+}
+
+main .card::before{
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+main .card img{
+  width: 100%;
+}
+
+main .card .image{
+  position: relative;
+}
+
+main .card .box{
+  font-size: .8rem;
+  padding: 3px;
+  position: absolute;
+}
+
+main .card .box.white{
+  background-color: white;
+  right: 0px;
+  top: 10px;
+  color: black;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+main .card .box.red{
+  background-color: red;
+  color: white;
+  left: 0px;
+  bottom: 30px;
+}
+
+main .card .box.green{
+  background-color: green;
+  color: white;
+  left: 40px;
+  bottom: 30px;
+}
+
+main .card span{
+  font-size: .7rem;
+  color: grey;
+}
+
+main .card h5{
+  text-transform: uppercase;
+}
+
+main .card .text-red{
+  color: red;
+}
+
+main .card .through{
+  text-decoration: line-through;
+}
