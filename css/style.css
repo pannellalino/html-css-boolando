@@ -84,12 +84,11 @@ main .card .image:hover img{
 }
 
 main .card .image:hover img.hover-img{
-  display: block;
+  display: inline-block;
 }
 
 main .card .image{
   position: relative;
-  height: 487.984px;
 }
 
 main .card .box{
